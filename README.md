@@ -77,7 +77,7 @@ src/
 
 ## Screenshot
 
-![Product Dashboard Screenshot](./screenshots/password.png)
+![Password Tracker](./screenshots/password.png)
 
 # How to Run the Project
 
