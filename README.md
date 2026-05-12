@@ -1,59 +1,145 @@
-# Lab: Password Input
+# Password Tracker React App
 
 ## Overview
-Now that you've learned how to work with events in React, it's time to build something and put those skills to use! Your goal for this lab is to add events in React to practice building event handling.
 
-You are working with a client to create a new password input within their website. They would like to keep track of when the user is typing as well as when the user hovers over and away from the submit button. This is to help with checking the cadence of their typing and the movement of their mouse for the purpose of adding anti-botting security for their user. Your task is to add these three events and functions related to the events so that the security engineer can easily come in and apply their anti-bot measures easily.
+This project is a simple React application that demonstrates how to use event handling in React components.
 
-## Task 1: Define the Problem
-- Create a password input that will track the changing of text and the mouse movements.
+The application includes:
 
-## Task 2: Determine the Design
-### Determine Component Tree
+- A password input field that detects when the user types
+- A submit button that detects mouse movement events
+
+The goal of the project is to practice:
+
+- Creating React components
+- Handling events in React
+- Using event handler functions
+- Logging user interactions to the console
+
+---
+
+# Features
+
+## PasswordInput Component
+
+The `PasswordInput` component:
+
+- Renders an `<input>` element
+- Uses `type="password"` to hide entered text
+- Tracks user typing with the `onChange` event
+- Prints a message to the console when the password changes
+
+Console output:
+
+```bash
+Entering password...
 ```
-└── App
-    ├── PasswordInput
-    └── SubmitButton
+
+---
+
+## SubmitButton Component
+
+The `SubmitButton` component:
+
+- Renders a `<button>`
+- Detects when the mouse enters the button area
+- Detects when the mouse leaves the button area
+- Prints messages to the console for both events
+
+Console outputs:
+
+```bash
+Mouse Entering
+Mouse Exiting
 ```
-### Isolate/Develop Design per Component
 
-## Task 3: Develop the Code
-### Create Components
-#### PasswordInput:
-- Create `PasswordInput` React component
-- Render an `<input>` with a password type
+---
 
-#### SubmitButton:
-- Create a `SubmitButton` React component
-- Render a `<button>` with the text “Submit Password”
+# Technologies Used
 
-### Add Events to Elements
-#### PasswordInput:
-- Add a change event to the `<input>`
+- React
+- JavaScript
+- JSX
 
-#### SubmitButton:
-- Add a mouse enter event to the `<button>`
-- Add a mouse leave event to the `<button>`
+---
 
-### Create Event Handler Functions
-#### PasswordInput:
-- Create a `handleChange` function
-- Add a `console.log` to print out “Entering password…”
+# Project Structure
 
-#### SubmitButton:
-- Create a `handleEnter` function
-- Add a `console.log` to print out “Mouse Entering”
-- Create a `handleLeave` function
-- Add a `console.log` to print out “Mouse Exiting”
+```bash
+src/
+│
+├── App.js
+├── PasswordInput.js
+└── SubmitButton.js
+```
 
-### Call Function in Respective Event
+---
 
-## Task 4: Test and Refine
-- Debugging and testing during coding
+# How to Run the Project
 
-## Task 5: Document and Maintain
+## 1. Install dependencies
 
-## Tools and Resources
-- **GitHub Repository:** [React Event Handling Vite Lab](https://github.com/learn-co-curriculum/react-event-handling-vite-lab)
-- **Event Handling in React:** [React Documentation](https://react.dev/learn/responding-to-events#adding-event-handlers)
+```bash
+npm install
+```
 
+## 2. Start the development server
+
+```bash
+npm start
+```
+
+## 3. Open the application
+
+Visit:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# Learning Objectives
+
+By completing this lab, you will learn how to:
+
+- Create reusable React components
+- Use event listeners in React
+- Handle form input events
+- Handle mouse events
+- Connect event handlers to JSX elements
+- Use `console.log()` for debugging and testing
+
+---
+
+# Example Code Behavior
+
+## Typing in the password field
+
+When the user types:
+
+```bash
+Entering password...
+```
+
+appears in the browser console.
+
+## Hovering over the button
+
+When the mouse enters the button:
+
+```bash
+Mouse Entering
+```
+
+When the mouse leaves the button:
+
+```bash
+Mouse Exiting
+```
+
+---
+
+# Author
+
+Created by Matthew Swanberg as part of a React event handling lab exercise (course 4 mod 4).
