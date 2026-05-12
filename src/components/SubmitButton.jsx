@@ -1,8 +1,24 @@
-// Code SubmitButton Component Here
+// SubmitButton component
+// This component renders a submit button
+// and tracks mouse movement over the button.
+function SubmitButton() {
 
-function SubmitButton (){
-    return(
-        <></>
+    // Event handler for mouse entering the button
+    function handleEnter() {
+        console.log("Mouse Entering")
+    }
+
+    // Event handler for mouse leaving the button
+    function handleLeave() {
+        console.log("Mouse Exiting")
+    }
+    return (
+        <button
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
+        >
+            Submit Password
+        </button>
     )
 }
 
