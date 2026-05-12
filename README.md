@@ -75,6 +75,10 @@ src/
 
 ---
 
+## Screenshot
+
+![Product Dashboard Screenshot](./screenshots/password.png)
+
 # How to Run the Project
 
 ## 1. Install dependencies
